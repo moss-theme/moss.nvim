@@ -3,7 +3,7 @@
 A clean, minimalist Neovim colorscheme inspired by the original [pustota VSCode theme](https://github.com/sobolevn/pustota). Designed to keep you focused on writing code without visual distractions.
 
 --------------------------------------------------------------------------------
-![pustota.nvim screenshot](https://raw.githubusercontent.com/igor-gorohovsky/pustota.nvim/master/assets/minimal.png)
+![nothing.nvim screenshot](https://github.com/Alchemmist/nothing.nvim/blob/master/assets/minimal.png)
 
 ## Features
 - Distraction-free, minimalist aesthetic
