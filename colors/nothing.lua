@@ -26,3 +26,25 @@ vim.cmd([[
 ]])
 
 
+vim.api.nvim_set_hl(0, "Pmenu", { bg = "NONE", fg = "#FFFFFF" })
+vim.api.nvim_set_hl(0, "PmenuSel", { bg = "#5f87af", fg = "#000000" })
+vim.api.nvim_set_hl(0, "PmenuSbar", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "PmenuThumb", { bg = "NONE" })
+
+-- For nvim-cmp
+vim.api.nvim_set_hl(0, "CmpBorder", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "CmpDocBorder", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "CmpItemAbbr", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "CmpItemAbbrMatch", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "CmpItemKind", { bg = "NONE" })
+
+-- Transparent float windows (for Neotree and other floats)
+vim.api.nvim_set_hl(0, "FloatBorder", { bg = "NONE", fg = "NONE" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
+
+-- For Telescope
+vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "TelescopePromptBorder", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "TelescopeResultsBorder", { bg = "NONE" })
+
+
