@@ -25,7 +25,6 @@ vim.cmd([[
   highlight FloatBorder guibg=NONE ctermbg=NONE
 ]])
 
-
 vim.api.nvim_set_hl(0, "Pmenu", { bg = "NONE", fg = "#FFFFFF" })
 vim.api.nvim_set_hl(0, "PmenuSel", { bg = "#5f87af", fg = "#000000" })
 vim.api.nvim_set_hl(0, "PmenuSbar", { bg = "NONE" })
@@ -46,5 +45,3 @@ vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
 vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "NONE" })
 vim.api.nvim_set_hl(0, "TelescopePromptBorder", { bg = "NONE" })
 vim.api.nvim_set_hl(0, "TelescopeResultsBorder", { bg = "NONE" })
-
-
