@@ -146,8 +146,8 @@ M.hl_langs = function()
 
 	-- Java specific
 	hl(0, "@constructor.java", { link = "Function" })
-	hl(0, "@operator.decorator.java", { link = "Operator" })
 	hl(0, "@operator.access.java", { fg = colors.gray })
+	hl(0, "@operator.decorator.java", { fg = colors.gray })
 
 	-- C# specific
 	hl(0, "@module.c_sharp", { link = "Type" })
