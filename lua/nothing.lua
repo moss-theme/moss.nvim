@@ -178,6 +178,7 @@ M.hl_langs = function()
 
 	-- Go specific
 	hl(0, "@property.go", { fg = colors.gray })
+    hl(0, "@keyword.chan", { fg = colors.keywords_and_operators })
 
 	-- Dart specific
 	hl(0, "@property.dart", { fg = colors.gray })
