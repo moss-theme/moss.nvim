@@ -1,16 +1,16 @@
 return {
-  constant = "#EBCB8B",     -- Светлый песочный (не такой теплый, как у вас)
-  function_definitions = "#A3BE8C", -- Приглушенный зеленый
-  keywords_and_operators = "#81A1C1", -- Голубой для ключевых слов
-  type_definitions = "#88C0D0",   -- Яркий бирюзовый
-  comment = "#616E88",      -- Холодный серо-синий
-  string = "#A3BE8C",       -- Зеленый, как у функций
+	constant = "#E6B450",
+	function_definitions = "#FFB454",
+	keywords_and_operators = "#FF8F40",
+	type_definitions = "#59C2FF",
+	comment = "#626A73",
+	string = "#C2D94C",
 
-  black = "#2E3440",        -- Характерный темный сине-серый фон Nord
-  gray = "#616E88",         -- Серый из комментариев
-  lgray = "#D8DEE9",        -- Светлый серо-голубой для текста
-  indent = "#3B4252",       -- Светлее фона
-  visual = "#434C5E",       -- Еще светлее для выделения
+	black = "#0A0E14",
+	gray = "#B3B1AD",
+	lgray = "#B9B9B9",
+	indent = "#181A1D",
+	visual = "#1C2631",
 
-  transparent = "NONE",
+	transparent = "NONE",
 }
