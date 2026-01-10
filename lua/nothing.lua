@@ -79,9 +79,11 @@ M.hl_langs = function()
 	hl(0, "luaFunc", { link = "Function" })
 
 	-- Python specific
+	hl(0, "pythonBuiltin", { fg = colors.gray })
 	hl(0, "@attribute.python", {})
 	hl(0, "@NonePy.python", { link = "Constant" })
 	hl(0, "@assertpy", { link = "Operator" })
+	hl(0, "@boolean", { fg = colors.keywords_and_operators })
 
 	-- Rust specific
 	hl(0, "@keyword.modifier.rust", { fg = colors.gray })
@@ -178,7 +180,7 @@ M.hl_langs = function()
 
 	-- Go specific
 	hl(0, "@property.go", { fg = colors.gray })
-    hl(0, "@keyword.chan", { fg = colors.keywords_and_operators })
+	hl(0, "@keyword.chan", { fg = colors.keywords_and_operators })
 
 	-- Dart specific
 	hl(0, "@property.dart", { fg = colors.gray })
