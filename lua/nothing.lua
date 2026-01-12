@@ -182,6 +182,10 @@ M.hl_langs = function()
 	hl(0, "@property.go", { fg = colors.gray })
 	hl(0, "@keyword.chan", { fg = colors.keywords_and_operators })
 	hl(0, "goType", { fg = colors.gray })
+	hl(0, "goBuiltins", { fg = colors.gray })
+	hl(0, "goSignedInts", { fg = colors.gray })
+	hl(0, "goUnsignedInts", { fg = colors.gray })
+	hl(0, "goFloats", { fg = colors.gray })
 
 	-- Dart specific
 	hl(0, "@property.dart", { fg = colors.gray })
