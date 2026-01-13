@@ -1,10 +1,10 @@
 return {
-	constant = "#E6B450",
+	constant = "#f3f2b2", -- #E6B450
 	function_definitions = "#FFB454",
-	keywords_and_operators = "#FF8F40",
+	keywords_and_operators = "#6aa84f", -- #FF8F40
 	type_definitions = "#59C2FF",
 	comment = "#626A73",
-	string = "#C2D94C",
+	string = "#90ab00", -- #C2D94C
 
 	black = "#0A0E14",
 	gray = "#B3B1AD",
