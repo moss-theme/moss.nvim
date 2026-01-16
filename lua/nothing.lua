@@ -27,7 +27,7 @@ M.hl_base = function()
 	hl(0, "Bracket", { fg = colors.gray })
 	hl(0, "PreProc", { fg = colors.gray })
 
-	hl(0, "Type", { fg = colors.type_definitions })
+	hl(0, "Type", { fg = colors.gray })
 
 	hl(0, "Visual", { bg = colors.visual })
 	hl(0, "Indent", { fg = colors.indent })
@@ -145,6 +145,11 @@ M.hl_langs = function()
 	hl(0, "@type.css", { link = "Function" })
 	hl(0, "@type.delimiter.css", { link = "Function" })
 	hl(0, "@punctuation.delimiter.css", {})
+	hl(0, "cssDefinition", { fg = colors.gray })
+	hl(0, "cssClassName", { fg = colors.keywords_and_operators })
+	hl(0, "cssClassNameDot", { fg = colors.keywords_and_operators })
+	hl(0, "cssBraces", { fg = colors.gray })
+	hl(0, "@tag.css", { fg = colors.gray })
 
 	-- Java specific
 	hl(0, "@constructor.java", { link = "Function" })
