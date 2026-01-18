@@ -176,6 +176,7 @@ M.hl_langs = function()
 	hl(0, "@lsp.type.property.c", { fg = colors.gray })
 	hl(0, "cTypedef", { fg = colors.gray })
 	hl(0, "cStructure", { fg = colors.keywords_and_operators })
+	hl(0, "cConstant", { fg = colors.constant })
 
 	-- TOML specific
 	hl(0, "@property.toml", { fg = colors.gray })
