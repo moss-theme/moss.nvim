@@ -73,6 +73,7 @@ M.hl_langs = function()
 	-- Lua specific
 	hl(0, "@variable.lua", { fg = colors.gray })
 	hl(0, "@property.lua", { fg = colors.gray })
+	hl(0, "@function.lua", { fg = colors.gray })
 	hl(0, "@constructor.lua", { link = "Bracket" })
 	hl(0, "luaTable", { link = "Bracket" })
 	hl(0, "luaParen", { link = "Bracket" })
