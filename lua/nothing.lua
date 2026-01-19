@@ -84,6 +84,7 @@ M.hl_langs = function()
 	hl(0, "@NonePy.python", { link = "Constant" })
 	hl(0, "@assertpy", { link = "Operator" })
 	hl(0, "@boolean", { fg = colors.keywords_and_operators })
+	hl(0, "pythonFunction", { fg = colors.gray })
 
 	-- Rust specific
 	hl(0, "@keyword.modifier.rust", { fg = colors.gray })
