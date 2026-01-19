@@ -119,6 +119,7 @@ M.hl_langs = function()
 	hl(0, "@tag.delimiter.javascript", { link = "Operator" })
 	hl(0, "@tag.attribute.javascript", { link = "Function" })
 	hl(0, "@constructor.definition.javascript", { link = "Keyword" })
+	hl(0, "@lsp.type.property.javascript", { fg = colors.gray })
 
 	-- HTML specific
 	hl(0, "@tag.attribute.html", { link = "Function" })
