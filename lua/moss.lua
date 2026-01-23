@@ -250,7 +250,7 @@ end
 local colorscheme = function()
 	vim.api.nvim_command("hi clear")
 	vim.o.termguicolors = true
-	vim.g.colors_name = "nothing"
+	vim.g.colors_name = "moss"
 	highlight()
 end
 

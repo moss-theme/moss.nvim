@@ -1,4 +1,4 @@
-require("nothing").colorscheme()
+require("moss").colorscheme()
 
 -- Transparent UI adjustments
 vim.cmd([[
