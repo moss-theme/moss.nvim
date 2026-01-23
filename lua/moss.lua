@@ -15,7 +15,7 @@ M.hl_base = function()
 	hl(0, "Constant", { fg = colors.constant })
 	hl(0, "Special", { fg = colors.gray })
 
-	hl(0, "Function", { fg = colors.function_definitions })
+	hl(0, "Function", { fg = colors.keywords_and_operators })
 
 	hl(0, "Operator", { fg = colors.keywords_and_operators })
 	hl(0, "Keyword", { fg = colors.keywords_and_operators })
@@ -30,7 +30,7 @@ M.hl_base = function()
 	hl(0, "Type", { fg = colors.gray })
 
 	hl(0, "Visual", { bg = colors.visual })
-	hl(0, "Indent", { fg = colors.indent })
+	hl(0, "Indent", { fg = colors.comment })
 end
 
 M.hl_langs = function()
@@ -78,6 +78,8 @@ M.hl_langs = function()
 	hl(0, "luaTable", { link = "Bracket" })
 	hl(0, "luaParen", { link = "Bracket" })
 	hl(0, "luaFunc", { link = "Function" })
+	hl(0, "@keyword.return.lua", { fg = colors.gray })
+	hl(0, "@operator.lua", { fg = colors.gray })
 
 	-- Python specific
 	hl(0, "pythonBuiltin", { fg = colors.gray })
