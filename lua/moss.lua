@@ -14,6 +14,7 @@ M.hl_base = function()
 
 	hl(0, "Constant", { fg = colors.constant })
 	hl(0, "Special", { fg = colors.gray })
+	hl(0, "Directory", { fg = colors.gray })
 
 	hl(0, "Function", { fg = colors.keywords_and_operators })
 
