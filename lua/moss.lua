@@ -45,9 +45,9 @@ M.hl_langs = function()
 	hl(0, "@constructor", {})
 
 	-- Treesitter brackets
-	hl(0, "@punctuation.bracket", { link = "Bracket" })
-	hl(0, "@punctuation.delimiter", { link = "Bracket" })
-	hl(0, "@punctuation.special", { link = "Bracket" })
+	hl(0, "@punctuation.bracket", { link = "Bracket", fg = colors.ignore })
+	hl(0, "@punctuation.delimiter", { link = "Bracket", fg = colors.ignore })
+	hl(0, "@punctuation.special", { link = "Bracket", fg = colors.ignore })
 
 	-- Treesitter variables
 	hl(0, "@variable", { fg = colors.gray })
