@@ -24,7 +24,7 @@ M.hl_base = function()
 	hl(0, "Label", { fg = colors.keywords_and_operators })
 	hl(0, "Repeat", { fg = colors.keywords_and_operators })
 	hl(0, "Statement", { fg = colors.keywords_and_operators })
-	hl(0, "Bracket", { fg = colors.gray })
+	hl(0, "Bracket", { fg = colors.ignore })
 	hl(0, "PreProc", { fg = colors.gray })
 
 	hl(0, "Type", { fg = colors.gray })
@@ -78,7 +78,7 @@ M.hl_langs = function()
 	hl(0, "luaTable", { link = "Bracket" })
 	hl(0, "luaParen", { link = "Bracket" })
 	hl(0, "luaFunc", { link = "Function" })
-	hl(0, "@keyword.return.lua", { fg = colors.gray })
+	hl(0, "@keyword.return.lua", { fg = colors.ignore })
 	hl(0, "@operator.lua", { fg = colors.gray })
 
 	-- Python specific
