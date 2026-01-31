@@ -80,6 +80,10 @@ M.hl_langs = function()
 	hl(0, "luaParen", { link = "Bracket" })
 	hl(0, "luaFunc", { link = "Function" })
 	hl(0, "@keyword.return.lua", { fg = colors.ignore })
+	hl(0, "@keyword.conditional.lua", { fg = colors.ignore })
+	hl(0, "@keyword.function.vim", { fg = colors.ignore })
+	hl(0, "@keyword.function.lua", { fg = colors.ignore })
+	hl(0, "@keyword.lua", { fg = colors.ignore })
 	hl(0, "@operator.lua", { fg = colors.gray })
 
 	-- Python specific
