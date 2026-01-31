@@ -23,7 +23,7 @@ M.hl_base = function()
 	hl(0, "Conditional", { fg = colors.keywords_and_operators })
 	hl(0, "Label", { fg = colors.keywords_and_operators })
 	hl(0, "Repeat", { fg = colors.keywords_and_operators })
-	hl(0, "Statement", { fg = colors.keywords_and_operators })
+	hl(0, "Statement", { fg = colors.ignore })
 	hl(0, "Bracket", { fg = colors.ignore })
 	hl(0, "PreProc", { fg = colors.gray })
 
