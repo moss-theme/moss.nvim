@@ -252,6 +252,42 @@ M.hl_langs = function()
 	hl(0, "@keyword.directive", { fg = colors.gray })
 end
 
+M.hl_ui_overrides = function()
+	hl(0, "Pmenu", { bg = nil, fg = colors.gray })
+	hl(0, "PmenuSel", { bg = colors.visual, fg = nil })
+	hl(0, "PmenuSbar", { bg = nil })
+	hl(0, "PmenuThumb", { bg = nil })
+
+    hl(0, "CmpPmenu", { bg = nil, fg = colors.gray })
+    hl(0, "CmpSel", { bg = colors.visual, fg = nil })
+    hl(0, "CmpDoc", { bg = nil, fg = nil })
+    hl(0, "CmpDocBorder", { bg = nil, fg = nil })
+
+	hl(0, "CmpBorder", { bg = nil })
+	hl(0, "CmpDocBorder", { bg = nil })
+	hl(0, "CmpItemAbbr", { bg = nil })
+	hl(0, "CmpItemAbbrMatch", { bg = nil })
+	hl(0, "CmpItemKind", { bg = nil })
+
+	hl(0, "TelescopeBorder", { bg = nil })
+	hl(0, "TelescopePromptBorder", { bg = nil })
+	hl(0, "TelescopeResultsBorder", { bg = nil })
+
+	hl(0, "NormalFloat", { bg = nil })
+	hl(0, "FloatBorder", { bg = nil, fg = nil })
+
+	hl(0, "Folded", { bg = nil })
+
+	hl(0, "TabLine", { bg = nil })
+	hl(0, "TabLineFill", { bg = nil })
+	hl(0, "TabLineSel", { bg = nil })
+
+	vim.o.cursorline = true
+	hl(0, "CursorLine", { bg = nil })
+
+	hl(0, "Comment", { fg = colors.comment, italic = true })
+end
+
 local highlight = function()
 	for _, v in pairs(M) do
 		v()
@@ -265,8 +301,4 @@ local colorscheme = function()
 	highlight()
 end
 
-local ibl_setup = function()
-	vim.api.nvim_set_hl(0, "Indent", { fg = "#000000" })
-end
-
-return { colorscheme = colorscheme, ibl_setup = ibl_setup }
+return { colorscheme = colorscheme }
