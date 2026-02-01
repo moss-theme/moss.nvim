@@ -33,6 +33,7 @@ M.hl_base = function()
 	hl(0, "Visual", { bg = colors.visual })
 	hl(0, "Indent", { fg = colors.comment })
 	hl(0, "Identifier", { fg = colors.gray })
+	hl(0, "MoreMsg", { fg = colors.gray })
 end
 
 M.hl_langs = function()
