@@ -141,6 +141,8 @@ M.hl_langs = function()
 	hl(0, "@markup.heading.4.html", { fg = colors.gray })
 	hl(0, "@markup.heading.5.html", { fg = colors.gray })
 	hl(0, "@markup.link.label.html", { fg = colors.gray })
+	hl(0, "htmlTag", { fg = colors.ignore })
+	hl(0, "htmlTagN", { fg = colors.ignore })
 
 	-- CSS specific
 	hl(0, "@property.css", { fg = colors.gray })
