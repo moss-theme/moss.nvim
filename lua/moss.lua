@@ -282,9 +282,6 @@ M.hl_ui_overrides = function()
 	hl(0, "TabLineFill", { bg = nil })
 	hl(0, "TabLineSel", { bg = nil })
 
-	vim.o.cursorline = true
-	hl(0, "CursorLine", { bg = nil })
-
 	hl(0, "Comment", { fg = colors.comment, italic = true })
 end
 
