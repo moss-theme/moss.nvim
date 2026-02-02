@@ -211,6 +211,7 @@ M.hl_langs = function()
 	hl(0, "goSignedInts", { fg = colors.gray })
 	hl(0, "goUnsignedInts", { fg = colors.gray })
 	hl(0, "goFloats", { fg = colors.gray })
+	hl(0, "goDeclaration", { fg = colors.ignore })
 
 	-- Dart specific
 	hl(0, "@property.dart", { fg = colors.gray })
