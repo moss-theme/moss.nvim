@@ -1,6 +1,6 @@
 return {
 	constant = "#f3f2b2",
-	keywords_and_operators = "#6aa84f",
+	keywords_and_operators = "#87af87",
 	comment = "#585859",
 	string = "#6f875f",
 
