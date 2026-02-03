@@ -24,7 +24,7 @@ M.hl_base = function()
 	hl(0, "Conditional", { fg = colors.keywords_and_operators })
 	hl(0, "Label", { fg = colors.keywords_and_operators })
 	hl(0, "Repeat", { fg = colors.keywords_and_operators })
-	hl(0, "Statement", { fg = colors.ignore })
+	hl(0, "Statement", { fg = colors.keywords_and_operators })
 	hl(0, "Bracket", { fg = colors.ignore })
 	hl(0, "PreProc", { fg = colors.gray })
 
@@ -212,6 +212,9 @@ M.hl_langs = function()
 	hl(0, "goUnsignedInts", { fg = colors.gray })
 	hl(0, "goFloats", { fg = colors.gray })
 	hl(0, "goDeclaration", { fg = colors.ignore })
+	hl(0, "goImport", { fg = colors.ignore })
+	hl(0, "goPackage", { fg = colors.ignore })
+	hl(0, "goVar", { fg = colors.ignore })
 
 	-- Dart specific
 	hl(0, "@property.dart", { fg = colors.gray })
