@@ -1,6 +1,6 @@
 local hl = vim.api.nvim_set_hl
 
-local colors = require("colors")
+local colors
 
 local M = {}
 
@@ -262,10 +262,10 @@ M.hl_ui_overrides = function()
 	hl(0, "PmenuSbar", { bg = nil })
 	hl(0, "PmenuThumb", { bg = nil })
 
-    hl(0, "CmpPmenu", { bg = nil, fg = colors.gray })
-    hl(0, "CmpSel", { bg = colors.visual, fg = nil })
-    hl(0, "CmpDoc", { bg = nil, fg = nil })
-    hl(0, "CmpDocBorder", { bg = nil, fg = nil })
+	hl(0, "CmpPmenu", { bg = nil, fg = colors.gray })
+	hl(0, "CmpSel", { bg = colors.visual, fg = nil })
+	hl(0, "CmpDoc", { bg = nil, fg = nil })
+	hl(0, "CmpDocBorder", { bg = nil, fg = nil })
 
 	hl(0, "CmpBorder", { bg = nil })
 	hl(0, "CmpDocBorder", { bg = nil })
@@ -290,16 +290,27 @@ M.hl_ui_overrides = function()
 end
 
 local highlight = function()
-	for _, v in pairs(M) do
-		v()
-	end
+	M.hl_base()
+	M.hl_langs()
+	M.hl_ui_overrides()
 end
 
 local colorscheme = function()
 	vim.api.nvim_command("hi clear")
 	vim.o.termguicolors = true
 	vim.g.colors_name = "moss"
+
+	colors = require("colors").get()
 	highlight()
 end
+
+vim.api.nvim_create_user_command("MossToggle", function()
+	if vim.o.background == "dark" then
+		vim.o.background = "light"
+	else
+		vim.o.background = "dark"
+	end
+	vim.cmd("colorscheme moss")
+end, {})
 
 return { colorscheme = colorscheme }

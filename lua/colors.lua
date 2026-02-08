@@ -1,20 +1,20 @@
-return {
-	constant = "#f3f2b2",
-	keywords_and_operators = "#87af87",
-	comment = "#585859",
-	string = "#6f875f",
+local palette = require("palette")
 
-	ignore = "#767676",
-	gray = "#B0B0B0",
-	visual = "#1C2631",
+local M = {}
 
-	transparent = "NONE",
+function M.get()
+	local mode = vim.o.background == "light" and "light" or "dark"
 
-    black = "#000000",
-	dark = "#444444",
-	red = "#d75f5f",
-	orange = "#d7875f",
-	blue = "#5f87af",
-	pink = "#d787af",
-	violet = "#8787af",
-}
+	local colors = {}
+	for name, value in pairs(palette) do
+		if type(value) == "table" then
+			colors[name] = value[mode]
+		else
+			colors[name] = value
+		end
+	end
+
+	return colors
+end
+
+return M
