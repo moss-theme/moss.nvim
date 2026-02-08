@@ -7,7 +7,7 @@ local M = {}
 M.hl_base = function()
 	-- Common
 	hl(0, "Normal", { fg = colors.gray, bg = colors.transparent })
-	hl(0, "Comment", { fg = colors.comment, italic = true })
+	hl(0, "Comment", { fg = colors.comment, bg = colors.transparent, italic = true })
 
 	hl(0, "String", { fg = colors.string })
 	hl(0, "Character", { fg = colors.string })
@@ -285,8 +285,6 @@ M.hl_ui_overrides = function()
 	hl(0, "TabLine", { bg = nil })
 	hl(0, "TabLineFill", { bg = nil })
 	hl(0, "TabLineSel", { bg = nil })
-
-	hl(0, "Comment", { fg = colors.comment, italic = true })
 end
 
 local highlight = function()
