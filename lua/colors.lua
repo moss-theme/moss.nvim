@@ -9,4 +9,12 @@ return {
 	visual = "#1C2631",
 
 	transparent = "NONE",
+
+    black = "#000000",
+	dark = "#444444",
+	red = "#d75f5f",
+	orange = "#d7875f",
+	blue = "#5f87af",
+	pink = "#d787af",
+	violet = "#8787af",
 }
