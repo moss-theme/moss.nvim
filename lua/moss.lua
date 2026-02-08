@@ -304,13 +304,32 @@ local colorscheme = function()
 	highlight()
 end
 
+local function load_colorscheme(bg)
+	vim.api.nvim_command("hi clear")
+	vim.o.termguicolors = true
+	vim.g.colors_name = "moss"
+
+	colors = require("colors").get(bg)
+	highlight()
+end
+
 vim.api.nvim_create_user_command("MossToggle", function()
 	if vim.o.background == "dark" then
 		vim.o.background = "light"
 	else
 		vim.o.background = "dark"
 	end
-	vim.cmd("colorscheme moss")
+	load_colorscheme(vim.o.background)
+end, {})
+
+vim.api.nvim_create_user_command("MossLight", function()
+	vim.o.background = "light"
+	load_colorscheme("light")
+end, {})
+
+vim.api.nvim_create_user_command("MossDark", function()
+	vim.o.background = "dark"
+	load_colorscheme("dark")
 end, {})
 
 return { colorscheme = colorscheme }
