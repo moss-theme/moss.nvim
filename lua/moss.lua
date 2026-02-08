@@ -314,22 +314,28 @@ local function load_colorscheme(bg)
 end
 
 vim.api.nvim_create_user_command("MossToggle", function()
-	if vim.o.background == "dark" then
-		vim.o.background = "light"
-	else
-		vim.o.background = "dark"
-	end
-	load_colorscheme(vim.o.background)
+    local theme
+    if vim.o.background == "dark" then
+        vim.o.background = "light"
+        theme = "light"
+    else
+        vim.o.background = "dark"
+        theme = "dark"
+    end
+    vim.cmd("colorscheme moss")
+    vim.fn.writefile({theme}, vim.g.last_theme)
 end, {})
 
 vim.api.nvim_create_user_command("MossLight", function()
 	vim.o.background = "light"
 	load_colorscheme("light")
+    vim.fn.writefile({"light"}, vim.g.last_theme)
 end, {})
 
 vim.api.nvim_create_user_command("MossDark", function()
 	vim.o.background = "dark"
 	load_colorscheme("dark")
+    vim.fn.writefile({"dark"}, vim.g.last_theme)
 end, {})
 
 return { colorscheme = colorscheme }
