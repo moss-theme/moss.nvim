@@ -70,5 +70,8 @@ return {
 		dark = "#8787af",
 		light = "#7a7fa8",
 	},
+	cursorline = {
+		dark = "#2a2a2a",
+		light = "#e8e8e8",
+	},
 }
-

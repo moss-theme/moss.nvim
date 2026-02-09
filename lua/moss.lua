@@ -7,7 +7,7 @@ local M = {}
 M.hl_base = function()
 	-- Common
 	hl(0, "Normal", { fg = colors.gray, bg = colors.transparent })
-	hl(0, "Comment", { fg = colors.comment, bg = colors.transparent, italic = true })
+	hl(0, "Comment", { fg = colors.comment, bg = colors.transparent })
 
 	hl(0, "String", { fg = colors.string })
 	hl(0, "Character", { fg = colors.string })
@@ -27,6 +27,8 @@ M.hl_base = function()
 	hl(0, "Statement", { fg = colors.keywords_and_operators })
 	hl(0, "Bracket", { fg = colors.ignore })
 	hl(0, "PreProc", { fg = colors.gray })
+
+	hl(0, "CursorLine", { bg = colors.cursorline })
 
 	hl(0, "Type", { fg = colors.gray })
 
@@ -312,28 +314,28 @@ local function load_colorscheme(bg)
 end
 
 vim.api.nvim_create_user_command("MossToggle", function()
-    local theme
-    if vim.o.background == "dark" then
-        vim.o.background = "light"
-        theme = "light"
-    else
-        vim.o.background = "dark"
-        theme = "dark"
-    end
-    vim.cmd("colorscheme moss")
-    vim.fn.writefile({theme}, vim.g.last_theme)
+	local theme
+	if vim.o.background == "dark" then
+		vim.o.background = "light"
+		theme = "light"
+	else
+		vim.o.background = "dark"
+		theme = "dark"
+	end
+	vim.cmd("colorscheme moss")
+	vim.fn.writefile({ theme }, vim.g.last_theme)
 end, {})
 
 vim.api.nvim_create_user_command("MossLight", function()
 	vim.o.background = "light"
 	load_colorscheme("light")
-    vim.fn.writefile({"light"}, vim.g.last_theme)
+	vim.fn.writefile({ "light" }, vim.g.last_theme)
 end, {})
 
 vim.api.nvim_create_user_command("MossDark", function()
 	vim.o.background = "dark"
 	load_colorscheme("dark")
-    vim.fn.writefile({"dark"}, vim.g.last_theme)
+	vim.fn.writefile({ "dark" }, vim.g.last_theme)
 end, {})
 
 return { colorscheme = colorscheme }
