@@ -218,6 +218,14 @@ M.hl_langs = function()
 	hl(0, "goPackage", { fg = colors.ignore })
 	hl(0, "goVar", { fg = colors.ignore })
 
+	-- Markdown specific
+	vim.api.nvim_set_hl(0, "MyMarkdownLinkText", {
+		fg = colors.gray,
+		underline = false,
+	})
+	vim.cmd("hi! link markdownLinkText MyMarkdownLinkText")
+	hl(0, "markdownUrl", { fg = colors.ignore })
+
 	-- Dart specific
 	hl(0, "@property.dart", { fg = colors.gray })
 
