@@ -26,6 +26,7 @@ M.hl_base = function()
 	hl(0, "Repeat", { fg = colors.keywords_and_operators })
 	hl(0, "Statement", { fg = colors.keywords_and_operators })
 	hl(0, "Bracket", { fg = colors.ignore })
+	hl(0, "BlinkPairs", { fg = colors.ignore })
 	hl(0, "PreProc", { fg = colors.gray })
 
 	hl(0, "CursorLine", { bg = colors.cursorline })
