@@ -5,8 +5,8 @@ return {
 	},
 
 	keywords_and_operators = {
-		dark = "#87af87",
-		light = "#5f9c5f",
+		dark = "#008000",
+		light = "#006400",
 	},
 
 	comment = {
